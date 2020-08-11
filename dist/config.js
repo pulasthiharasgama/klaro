@@ -39,13 +39,10 @@ var klaroConfig = {
 
     // Show "accept all" to accept all apps instead of "ok" that only accepts
     // required and "default: true" apps
-    acceptAll: true,
+    acceptAll: false,
 
     // replace "decline" with cookie manager modal
     hideDeclineAll: false,
-
-    // hide "learnMore" link
-    hideLearnMore: false,
 
     // You can define the UI language directly here. If undefined, Klaro will
     // use the value given in the global "lang" variable. If that does
@@ -64,29 +61,9 @@ var klaroConfig = {
         // If you erase the "consentModal" translations, Klaro will use the
         // bundled translations.
         de: {
-            consentNotice: {
-                extraHTML: "<p>test</p>",
-            },
             consentModal: {
                 description:
                     'Hier können Sie einsehen und anpassen, welche Information wir über Sie sammeln. Einträge die als "Beispiel" gekennzeichnet sind dienen lediglich zu Demonstrationszwecken und werden nicht wirklich verwendet.',
-            },
-            inlineTracker: {
-                description: 'Beispiel für ein Inline-Tracking Skript',
-            },
-            externalTracker: {
-                description: 'Beispiel für ein externes Tracking Skript',
-            },
-            adsense: {
-                description: 'Anzeigen von Werbeanzeigen (Beispiel)',
-                title: 'Google AdSense Werbezeugs',
-            },
-            matomo: {
-                description: 'Sammeln von Besucherstatistiken',
-            },
-            camera: {
-                description:
-                    'Eine Überwachungskamera (nur ein Beispiel zu IMG-Tags)',
             },
             cloudflare: {
                 description: 'Schutz gegen DDoS-Angriffe',
@@ -95,12 +72,6 @@ var klaroConfig = {
                 description:
                     'Chat Widget & Sammeln von Besucherstatistiken (nur ein Beispiel)',
             },
-            mouseflow: {
-                description: 'Echtzeit-Benutzeranalyse (nur ein Beispiel)',
-            },
-            googleFonts: {
-                description: 'Web-Schriftarten von Google gehostet',
-            },
             purposes: {
                 analytics: 'Besucher-Statistiken',
                 security: 'Sicherheit',
@@ -108,47 +79,25 @@ var klaroConfig = {
                 advertising: 'Anzeigen von Werbung',
                 styling: 'Styling',
             },
+            groups: {
+                analytics: 'Analytik',
+                marketing: 'Marketing',
+            },
         },
         en: {
-            consentNotice: {
-                // uncomment and edit this to add extra HTML to the consent notice below the main text
-                // extraHTML: "<p>Please look at our <a href=\"#imprint\">imprint</a> for further information.</p>",
-            },
             consentModal: {
-                // uncomment and edit this to add extra HTML to the consent modal below the main text
-                // extraHTML: "<p>This is additional HTML that can be freely defined.</p>",
                 description:
                     'Here you can see and customize the information that we collect about you. Entries marked as "Example" are just for demonstration purposes and are not really used on this website.',
-            },
-            inlineTracker: {
-                description: 'Example of an inline tracking script',
-            },
-            externalTracker: {
-                description: 'Example of an external tracking script',
-            },
-            adsense: {
-                description: 'Displaying of advertisements (just an example)',
-                title: 'Google Adsense Advertisement',
-            },
-            matomo: {
-                description: 'Collecting of visitor statistics',
-            },
-            camera: {
-                description:
-                    'A surveillance camera (just an example for an IMG tag)',
             },
             cloudflare: {
                 description: 'Protection against DDoS attacks',
             },
+            googleAnalytics: {
+                description: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic',
+            },
             intercom: {
                 description:
                     'Chat widget & collecting of visitor statistics (just an example)',
-            },
-            mouseflow: {
-                description: 'Real-Time user analytics (just an example)',
-            },
-            googleFonts: {
-                description: 'Web fonts hosted by Google',
             },
             purposes: {
                 analytics: 'Analytics',
@@ -157,27 +106,16 @@ var klaroConfig = {
                 advertising: 'Advertising',
                 styling: 'Styling',
             },
+            groups: {
+                analytics: 'Analytics',
+                marketing: 'Marketing',
+                technical: 'Technical',
+            },
         },
         tr: {
             consentModal: {
                 description:
                     'Hakkınızda topladığımız bilgileri burada görebilir ve özelleştirebilirsiniz. "Örnek" olarak belirtilenler sadece gösterim amaçlıdır ve gerçekte bu site için kullanılmazlar.',
-            },
-            inlineTracker: {
-                description: 'Satıriçi takip kodu için bir örnek',
-            },
-            externalTracker: {
-                description: 'Dışarıdan çağırılan bir takip kodu için örnek',
-            },
-            adsense: {
-                description: 'Reklam görüntüleme (sadece örnek)',
-            },
-            matomo: {
-                description: 'Ziyaretçi istatistiklerini toplama',
-            },
-            camera: {
-                description:
-                    'İzleme kamerası (IMG tag icin saçma bir örnek daha)',
             },
             cloudflare: {
                 description: 'DDoS saldırılarına karşı koruma',
@@ -185,14 +123,6 @@ var klaroConfig = {
             intercom: {
                 description:
                     'Sohbet aracı ve ziyaretçi istatistiklerini toplama (sadece bir örnek)',
-            },
-            mouseflow: {
-                description:
-                    'Gerçek zamanlı kullanıcı istatistiği (sadece bir örnek)',
-            },
-            googleFonts: {
-                description:
-                    'Google tarafından barındırılan Web Yazıtipi bilgileri',
             },
             purposes: {
                 analytics: 'Analitik',
@@ -208,16 +138,17 @@ var klaroConfig = {
     apps: [
         {
             // Each app should have a unique (and short) name.
-            name: 'matomo',
+            name: 'googleAnalytics',
+            group: 'analytics',
 
             // If "default" is set to true, the app will be enabled by default
             // Overwrites global "default" setting.
             // We recommend leaving this to "false" for apps that collect
             // personal information.
-            default: true,
+            default: false,
 
             // The title of you app as listed in the consent modal.
-            title: 'Matomo/Piwik',
+            title: 'Google Analytics',
 
             // The purpose(s) of this app. Will be listed on the consent notice.
             // Do not forget to add translations for all purposes you list here.
@@ -234,12 +165,6 @@ var klaroConfig = {
                 // is not the current domain. If you do not set these values
                 // properly, the cookie can't be deleted by Klaro
                 // (there is no way to access the path or domain of a cookie in JS)
-                // Notice that it is not possible to delete cookies that were set
-                // on a third-party domain! See the note at mdn:
-                // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie#new-cookie_domain
-                [/^_pk_.*$/, '/', 'klaro.kiprotect.com'], //for the production version
-                [/^_pk_.*$/, '/', 'localhost'], //for the local version
-                'piwik_ignore',
             ],
 
             // An optional callback function that will be called each time
@@ -263,53 +188,48 @@ var klaroConfig = {
 
             // If "onlyOnce" is set to true, the app will only be executed
             // once regardless how often the user toggles it on and off.
-            onlyOnce: true,
+            onlyOnce: false,
         },
 
         // The apps will appear in the modal in the same order as defined here.
         {
-            name: 'inlineTracker',
-            title: 'Inline Tracker',
-            purposes: ['analytics'],
-            cookies: ['inline-tracker'],
-            optOut: false,
-        },
-        {
-            name: 'externalTracker',
-            title: 'External Tracker',
-            purposes: ['analytics', 'security'],
-            cookies: ['external-tracker'],
-        },
-        {
             name: 'intercom',
+            group: 'analytics',
             title: 'Intercom',
-            default: true,
+            default: false,
             purposes: ['livechat'],
         },
         {
-            name: 'mouseflow',
-            title: 'Mouseflow',
-            purposes: ['analytics'],
+            name: 'intercom2',
+            group: 'analytics',
+            title: 'Intercom2',
+            default: false,
+            purposes: ['livechat'],
         },
         {
-            name: 'adsense',
-            // if you omit the title here Klaro will try to look it up in the
-            // translations
-            //title: 'Google AdSense',
-            purposes: ['advertising'],
+            name: 'intercom3',
+            group: 'marketing',
+            title: 'Interco3m',
+            default: false,
+            purposes: ['livechat'],
         },
         {
-            name: 'camera',
-            title: 'Surveillance Camera',
-            purposes: ['security'],
+            name: 'intercom4',
+            group: 'marketing',
+            title: 'Intercom4',
+            default: false,
+            purposes: ['livechat'],
         },
         {
-            name: 'googleFonts',
-            title: 'Google Fonts',
-            purposes: ['styling'],
+            name: 'intercom6',
+            group: 'marketing',
+            title: 'Intercom6',
+            default: false,
+            purposes: ['livechat'],
         },
         {
             name: 'cloudflare',
+            group: 'technical',
             title: 'Cloudflare',
             purposes: ['security'],
             required: true,
