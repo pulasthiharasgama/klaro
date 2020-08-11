@@ -23,6 +23,8 @@ app:
   disableAll:
     title: Habilita/deshabilita totes les aplicacions
     description: Useu aquest botó per a habilitar o deshabilitar totes les aplicacions.
+  disableGroup:
+    description: Utilitzeu aquest commutador per activar / desactivar el grup.
   optOut:
     title: (opt-out)
     description: Aquesta aplicació es carrega per defecte, però podeu desactivar-la

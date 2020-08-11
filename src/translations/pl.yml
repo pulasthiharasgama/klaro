@@ -23,6 +23,8 @@ app:
   disableAll:
     title: Przełącz dla wszystkich aplikacji
     description: Użyj przełącznika, aby włączyć/wyłączyć wszystkie aplikacje.
+  disableGroup:
+    description: Użyj tego przełącznika, aby włączyć / wyłączyć grupę.
   optOut:
     title: (rezygnacja)
     description: Ta aplikacja jest domyślnie ładowana (ale możesz zrezygnować)

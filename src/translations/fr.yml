@@ -25,6 +25,8 @@ app:
   disableAll:
     title: Changer toutes les options
     description: Utiliser ce bouton pour activer/désactiver toutes les options
+  disableGroup:
+    description: Utilisez le bouton de sélection pour activer /désactiver le groupe.
   optOut:
     title: (opt-out)
     description: Cette application est chargée par défaut (mais vous pouvez la désactiver)

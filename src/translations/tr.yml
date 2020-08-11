@@ -21,6 +21,8 @@ app:
   disableAll:
     title: Tüm uygulamaları aç/kapat
     description: Toplu açma/kapama için bu düğmeyi kullanabilirsin.
+  disableGroup:
+    description: Grubu etkinleştirmek / devre dışı bırakmak için bu anahtarı kullanın.
   optOut:
     title: (isteğe bağlı)
     description: Bu uygulama varsayılanda yüklendi (ancak iptal edebilirsin)

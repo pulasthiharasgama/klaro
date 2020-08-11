@@ -23,6 +23,8 @@ app:
   disableAll:
     title: Habilitar/deshabilitar todas las aplicaciones
     description: Use este botón para habilitar o deshabilitar todas las aplicaciones.
+  disableGroup:
+    description: Utilice este interruptor para habilitar / deshabilitar el grupo.
   optOut:
     title: (opt-out)
     description: Esta aplicación se carga de forma predeterminada (pero puede desactivarla)

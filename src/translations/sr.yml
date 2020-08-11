@@ -21,6 +21,8 @@ app:
   disableAll:
     title: Izmeni sve
     description: Koristite ovaj prekidač da omogućite/onesposobite sve aplikacije odjednom.
+  disableGroup:
+    description: Pomoću ovog prekidača omogućite / onemogućite grupu.
   optOut:
     title: (onesposobite)
     description: Ova aplikacija je učitana automatski (ali je možete onesposobiti)

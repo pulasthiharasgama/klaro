@@ -23,6 +23,8 @@ app:
   disableAll:
     title: Alle opties in/uit schakelen
     description: Gebruik deze schakeloptie om alle apps in/uit te schakelen.
+  disableGroup:
+    description: Gebruik deze schakelaar om de groep in / uit te schakelen.
   optOut:
     title: (afmelden)
     description: Deze app is standaard geladen (maar je kunt je afmelden)

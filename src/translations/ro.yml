@@ -20,6 +20,8 @@ app:
   disableAll:
     title: Comutați între toate aplicațiile
     description: Utilizați acest switch pentru a activa/dezactiva toate aplicațiile.
+  disableGroup:
+    description: Utilizați acest comutator pentru a activa / dezactiva grupul.
   optOut:
     title: (opt-out)
     description: Această aplicație este încărcată în mod implicit (dar puteți renunța)

@@ -21,6 +21,8 @@ app:
   disableAll:
     title: Ändra för alla appar
     description: Använd detta reglage för att aktivera/avaktivera samtliga appar.
+  disableGroup:
+    description: Använd denna switch för att aktivera / inaktivera grupp.
   optOut:
     title: (Avaktivera)
     description: Den här appen laddas som standardinställning (men du kan avaktivera den)

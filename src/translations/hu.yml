@@ -21,6 +21,8 @@ app:
   disableAll:
     title: Összes app átkapcsolása
     description: Használd ezt a kapcsolót az összes alkalmazás engedélyezéséhez/letiltásához.
+  disableGroup:
+    description: Ezzel a kapcsolóval engedélyezheti / letilthatja a csoportot.
   optOut:
     title: (leiratkozás)
     description: Ez az alkalmazás alapértelmezés szerint betöltött (de ki lehet kapcsolni)

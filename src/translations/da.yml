@@ -23,6 +23,8 @@ app:
   disableAll:
     title: Aktiver/deaktiver alle applikatione
     description: Brug denne kontakt til at aktivere/deaktivere alle apps.
+  disableGroup:
+    description: Brug denne switch til at aktivere / deaktivere gruppe.
   optOut:
     title: Opt-Out
     description: Denne applikation indlæses som standard (men du kan deaktivere den).

@@ -21,6 +21,8 @@ app:
   disableAll:
     title: Valitse kaikki
     description: Aktivoi kaikki päälle/pois.
+  disableGroup:
+    description: Käytä tätä kytkintä ryhmän ottamiseen käyttöön tai poistamiseen käytöstä.
   optOut:
     title: (ladataan oletuksena)
     description: Ladataan oletuksena (mutta voit ottaa sen pois päältä)

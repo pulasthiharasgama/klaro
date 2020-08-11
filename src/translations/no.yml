@@ -20,6 +20,8 @@ app:
   disableAll:
     title: Bytt alle apper
     description: Bruk denne for å skru av/på alle apper.
+  disableGroup:
+    description: Bruk denne bryteren til å aktivere / deaktivere gruppe.
   optOut:
     title: (opt-out)
     description: Denne appen er lastet som standard (men du kan skru det av)
