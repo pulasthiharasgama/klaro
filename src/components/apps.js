@@ -57,11 +57,14 @@ export default class Apps extends React.Component {
                 toggleableGroupApps.filter((app) => consents[app.name])
                     .length === 0
 
+            let allRequired = true
             groupApps.map((app) => {
                 const toggleApp = (value) => {
                     toggle([app], value)
                 }
                 const checked = consents[app.name]
+                allRequired = allRequired && app.required ? true : false
+
                 appItemsList.push(
                     <li key={app.name} className="cm-app">
                         <AppItem
@@ -76,6 +79,7 @@ export default class Apps extends React.Component {
             appItemsList.unshift(
                 <li className="cm-app cm-toggle-group">
                     <AppItem
+                        required={allRequired}
                         name={`disableGroup-${group}`}
                         title={t(['groups', group])}
                         description={t(['app', 'disableGroup', 'description'])}
