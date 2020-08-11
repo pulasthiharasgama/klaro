@@ -7,3 +7,11 @@ export function getPurposes(config){
     }
     return Array.from(purposes)
 }
+
+export function getGroups(config){
+    const groups = new Set([])
+    for(let i = 0; i < config.apps.length; i++){
+        groups.add(config.apps[i].group)
+    }
+    return Array.from(groups)
+}
