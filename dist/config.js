@@ -234,5 +234,12 @@ var klaroConfig = {
             purposes: ['security'],
             required: true,
         },
+        {
+            name: 'cloudflare2',
+            group: 'technical',
+            title: 'Cloudflare2',
+            purposes: ['security'],
+            required: true,
+        },
     ],
 };
