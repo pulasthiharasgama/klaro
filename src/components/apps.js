@@ -51,10 +51,10 @@ export default class Apps extends React.Component {
             let groupApps = apps.filter((app) => app.group == group)
             groupAppMap[group] = groupApps
 
-            const toggleableGroupApps = groupApps.filter((app) => !app.required)
+            const togglableGroupApps = groupApps.filter((app) => !app.required)
 
             const allGroupDisabled =
-                toggleableGroupApps.filter((app) => consents[app.name])
+                togglableGroupApps.filter((app) => consents[app.name])
                     .length === 0
 
             let allRequired = true
